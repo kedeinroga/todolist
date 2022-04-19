@@ -18,12 +18,22 @@
       height: 100vh;
   }
 
+  .task {
+      padding: 10px;
+      background-color: var(--background-secundary);
+      border-radius: 10px;
+      margin: 10px;
+  }
+
   .content_buttons {
       display: flex;
       justify-content: space-between;
   }
 
   .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     input, a {
         display: inline-block;
         border-radius: 100px;

@@ -1,3 +1,4 @@
+<div class='task'>
 <%= form_with(model: task) do |form| %>
   <% if task.errors.any? %>
     <div style="color: red">
@@ -25,3 +26,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+</div>
