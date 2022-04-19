@@ -30,5 +30,31 @@ body{
 }
 a{
   text-decoration:none;
-  color:green;
+  color: var(--secundary-text);
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.0017em;
+    color: var(--primary-text);
+}
+
+p, label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.0017em;
+    color: var(--primary-text);
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.408px;
 }

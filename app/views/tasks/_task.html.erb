@@ -4,9 +4,17 @@
   <p>Done:
     <%= task.done %>
   </p>
-  <%= link_to "Toggle",  complete_task_path(task), remote: true, method: :patch %>
+  <%
+=begin%>
+ <%= link_to "Toggle",  complete_task_path(task), remote: true, method: :patch %> 
+<%
+=end%>
 
-  <p><%= link_to "Edit tasks", edit_task_path(task.id) %></p>
-  <%= button_to "Destroy this task", task, method: :delete, data: {confirm: "Are you sure?"} %>
+  <div class='content_buttons'>
+    <div class=button_link><%= link_to "Edit tasks", edit_task_path(task.id) %></div>
+    <div class=button_link>
+      <%= button_to "Destroy this task", task, method: :delete, data: {confirm: "Are you sure?"} %>
+    </div>
+  </div>
 
 </div>

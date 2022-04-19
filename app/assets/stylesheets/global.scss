@@ -8,3 +8,42 @@
     --background-secundary: #F7F9FA;
     --error: #DD2E44;
   }
+
+  .page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--background);
+      height: 100vh;
+  }
+
+  .content_buttons {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .button {
+    input, a {
+        display: inline-block;
+        border-radius: 100px;
+        text-decoration: none;
+        background-color: transparent;
+        padding: .5rem 1rem;
+        transition: .2s;
+        margin: 8px 0;
+    }
+    &_link{
+        button, a {
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            background-color: transparent;
+            cursor: pointer;
+        }
+      }
+}
+
+.button:hover > input{
+    background-color: var(--primary-hover);
+    color: white;
+  }
