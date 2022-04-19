@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby version
+    2.7.1
 
-Things you may want to cover:
+## Steps
+- Clone the repository
+- Run bundle install
+- Migrate DB: ```$ rails db:migrate ```
+- Run server: ```$ rails s ```
 
-* Ruby version
+ **Note:** Can **sqlite** be used for database.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
