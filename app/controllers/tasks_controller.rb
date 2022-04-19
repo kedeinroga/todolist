@@ -57,6 +57,14 @@ class TasksController < ApplicationController
     end
   end
 
+  def complete
+    puts "-------------------"
+    p @task
+    puts "-------------------"
+    @task.update_attribute(:done, !@task.done)
+    redirect_to root_path, notice: "Task completed"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task

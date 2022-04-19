@@ -1,15 +1,12 @@
 <div id="<%= dom_id task %>">
-  <p>
-    <strong>Description:</strong>
-    <p><%= task.description %></p>
-  </p>
+  <p>Description: <%= task.description %></p>
 
-  <p>
-    <strong>Done:</strong>
+  <p>Done:
     <%= task.done %>
   </p>
+  <%= link_to "Toggle",  complete_task_path(task), remote: true, method: :patch %>
 
   <p><%= link_to "Edit tasks", edit_task_path(task.id) %></p>
-  <%= button_to "Destroy this task", task, method: :delete %>
+  <%= button_to "Destroy this task", task, method: :delete, data: {confirm: "Are you sure?"} %>
 
 </div>
