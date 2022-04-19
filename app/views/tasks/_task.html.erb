@@ -1,7 +1,7 @@
 <div id="<%= dom_id task %>">
   <p>
     <strong>Description:</strong>
-    <%= task.description %>
+    <p><%= task.description %></p>
   </p>
 
   <p>
@@ -9,6 +9,7 @@
     <%= task.done %>
   </p>
 
+  <p><%= link_to "Edit tasks", edit_task_path(task.id) %></p>
   <%= button_to "Destroy this task", task, method: :delete %>
 
 </div>
