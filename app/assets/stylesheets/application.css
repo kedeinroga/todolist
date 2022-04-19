@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+ :root{
+
+    /* Fonts */
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+
+}
+
+body{
+  margin: 0;
+  background-color: var(--background-secundary);
+  font-family: var(--font-roboto);
+}
+a{
+  text-decoration:none;
+  color:green;
+}
